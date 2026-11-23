@@ -30,8 +30,12 @@ pandas, matplotlib and seaborn. My first portfolio project as a junior data anal
 - **The league is low-scoring and tight:** 2.29 goals per match on average (flat across 10
   seasons), **73.1%** of matches are decided by at most one goal, the most common result is
   1-1 (412 matches), and **12.3%** of matches end 0-0.
-- **Hossam Hassan is the top scorer of the decade** with 77 goals (own goals removed),
-  ahead of Abdallah El Said (76) and Zizo (73).
+- **Abdallah El Said is the top scorer of the decade** with 76 goals (own goals removed),
+  ahead of Hossam Hassan (69) and Zizo (61). Identity check (notebook section 5): the raw
+  data merges namesakes, so 8 "Hossam Hassan" goals at El Sharkia (a different player, a
+  defensive midfielder) and 12 "Zizo" goals at El Dakhlia (the Zamalek star was in Europe
+  then) were split out. The Hossam Hassan here is the Smouha/Al Ittihad striker born in
+  1993, not the 1966 legend - and his 69 goals match his documented career exactly.
 
 **Home advantage is a club-by-club story:**
 
@@ -62,7 +66,7 @@ pandas, matplotlib and seaborn. My first portfolio project as a junior data anal
 - Different kinds of imbalance: England has the bigger top-to-bottom points gap (71 vs 61
   on average), but Egypt had only **2 champions in 9 completed seasons vs 4 in England**
   (Man City 5, Liverpool, Chelsea, Leicester).
-- Penalties: **15.4% of Egyptian goals vs 7.7% of English goals** (2015-2023, the span the
+- Penalties: **15.3% of Egyptian goals vs 7.7% of English goals** (2015-2023, the span the
   EPL goal-level data covers).
 
 ## How to run
@@ -101,6 +105,8 @@ football-data results exactly for the same span.
   from season totals and the champions analysis (per-match rates still use it).
 - The Egyptian goals table has 10 goals fewer than the results imply (6,635 vs 6,645, 0.15%).
   Scorer rankings are unaffected at the top.
+- Scorers are merged by exact name, which merges namesakes: verified the top 10 club-by-club
+  and split out 20 goals belonging to two different players (see notebook section 5).
 - 24 Egyptian matches (0.8%) have no stadium/referee info; the rest of the stadium table
   covers all 10 seasons.
 - EPL goal-level data ends at 2022-23, so the penalty comparison uses 2015-2023 on both sides.
