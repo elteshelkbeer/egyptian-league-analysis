@@ -83,6 +83,10 @@ junior data analyst.
   Egypt, but with fans in their clubs' own stadiums: goals per match **2.90** (England 2.83,
   Egypt 2.29), home wins **43.5%** (44.5%, 36.5%), draws **23.5%** (23.3%, 32.7%), 0-0 draws
   **6.0%** (6.2%, 12.3%).
+- **The excitement gap:** matches with 4+ goals are **33.6%** of Saudi and **32.1%** of
+  English fixtures vs **20.7%** in Egypt; a third of Egyptian matches end with 0-1 goals
+  (33.7% vs ~22%), and 12.3% end goalless, double the others. Egypt's "tight" league is a
+  low-event league.
 - **The stands:** England averages ~40,000 per match; Saudi Arabia ~8,000 league-wide but
   **22,461 for its big 4 popular clubs vs 4,325 for the rest** (2024-25). Egyptian clubs,
   by contrast, played with no crowds at all for 6.5 years after 2012 and are still capped at
@@ -90,14 +94,15 @@ junior data analyst.
 - **A stadium of one's own:** 18 Saudi clubs play in 15 stadiums (only city-mates share) and
   20 English clubs in 20 - while Egyptian clubs used 5.1 stadiums each. Champions in the
   decade: **2 in Egypt, 4 in Saudi Arabia, 4 in England**.
-- **Popular clubs carry the league:** splitting Egypt's 37 clubs into 13 popular (historic
-  fanbase) and 24 corporate/institutional clubs, popular clubs won **all 9 completed titles**
-  and **21 of 27 top-3 finishes** (28% of their seasons vs 7%) - the 6 exceptions are all
-  Pyramids, the club that substituted money for a fanbase. Corporate clubs fill relegation
-  spots more often (19% vs 14% of seasons). Saudi confirms it from the other side: all 10
-  titles went to the big-4 popular clubs. Honesty note: outside Ahly/Zamalek, popular-vs-
-  corporate head-to-head is even (31.8% vs 32.1%), so the effect lives in the big historic
-  clubs, not every provincial club with fans.
+- **Popular clubs carry the league - and Ahly/Zamalek are the exception above it:**
+  splitting Egypt's 37 clubs into 13 popular (historic fanbase) and 24
+  corporate/institutional clubs, popular clubs won **all 9 completed titles** and **21 of 27
+  top-3 finishes** (28% of their seasons vs 7%) - the 6 exceptions are all Pyramids, the
+  club that substituted money for a fanbase. But the two giants sit above the league's
+  level: outside them, popular clubs perform exactly like corporate clubs head-to-head
+  (31.8% vs 32.1%) - without home crowds, their fan advantage never reaches the pitch.
+  Saudi confirms the mirror: all 10 titles went to the big-4 popular clubs whose crowds
+  average 5x the rest.
 
 ## How to run
 
