@@ -85,6 +85,14 @@ junior data analyst.
 - **A stadium of one's own:** 18 Saudi clubs play in 15 stadiums (only city-mates share) and
   20 English clubs in 20 - while Egyptian clubs used 5.1 stadiums each. Champions in the
   decade: **2 in Egypt, 4 in Saudi Arabia, 4 in England**.
+- **Popular clubs carry the league:** splitting Egypt's 37 clubs into 13 popular (historic
+  fanbase) and 24 corporate/institutional clubs, popular clubs won **all 9 completed titles**
+  and **21 of 27 top-3 finishes** (28% of their seasons vs 7%) - the 6 exceptions are all
+  Pyramids, the club that substituted money for a fanbase. Corporate clubs fill relegation
+  spots more often (19% vs 14% of seasons). Saudi confirms it from the other side: all 10
+  titles went to the big-4 popular clubs. Honesty note: outside Ahly/Zamalek, popular-vs-
+  corporate head-to-head is even (31.8% vs 32.1%), so the effect lives in the big historic
+  clubs, not every provincial club with fans.
 
 ## How to run
 
