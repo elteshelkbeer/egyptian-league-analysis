@@ -101,12 +101,16 @@ football-data results exactly for the same span.
 
 ## Caveats (found during data cleaning)
 
-- Egyptian season 2024-25 is **partial**: 153 matches up to 29 April 2025, so it is excluded
+- Egyptian season 2024-25 is **partial**: 153 matches up to 5 March 2025 (the Kaggle page
+  says 29 April, but the latest match in the files is 5 March), so it is excluded
   from season totals and the champions analysis (per-match rates still use it).
 - The Egyptian goals table has 10 goals fewer than the results imply (6,635 vs 6,645, 0.15%).
   Scorer rankings are unaffected at the top.
 - Scorers are merged by exact name, which merges namesakes: verified the top 10 club-by-club
   and split out 20 goals belonging to two different players (see notebook section 5).
+- The 2015-2025 window bounds career totals. Example: striker Hossam Hassan's full league
+  record is 77 goals, but 2 pre-date the window (El Gaish, El Dakhleya) and 6 post-date it
+  (Modern Sport, Al Ittihad), so this project credits him with the 69 scored inside it.
 - 24 Egyptian matches (0.8%) have no stadium/referee info; the rest of the stadium table
   covers all 10 seasons.
 - EPL goal-level data ends at 2022-23, so the penalty comparison uses 2015-2023 on both sides.
