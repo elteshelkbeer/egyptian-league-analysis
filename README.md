@@ -1,8 +1,9 @@
 # Egyptian Premier League vs the World: 10 Seasons of Data (2015-2025)
 
 Exploratory data analysis of 2,907 Egyptian Premier League matches across 10 seasons,
-compared with 3,800 English Premier League matches over the same span, using Python,
-pandas, matplotlib and seaborn. My first portfolio project as a junior data analyst.
+compared with 3,800 English Premier League and 2,358 Saudi Pro League matches over the
+same span, using Python, pandas, matplotlib and seaborn. My first portfolio project as a
+junior data analyst.
 
 ## Questions this project answers
 
@@ -13,6 +14,8 @@ pandas, matplotlib and seaborn. My first portfolio project as a junior data anal
 5. Which team had the best defense?
 6. How close are the matches?
 7. Egypt vs England over the same 10 seasons: what is actually different?
+8. The fan-power test: does Saudi Arabia - where fans fill their clubs' own stadiums -
+   look like Egypt or like England?
 
 ## Headline findings
 
@@ -69,6 +72,20 @@ pandas, matplotlib and seaborn. My first portfolio project as a junior data anal
 - Penalties: **15.3% of Egyptian goals vs 7.7% of English goals** (2015-2023, the span the
   EPL goal-level data covers).
 
+**The fan-power test: Saudi Arabia as the control group (2,358 matches):**
+
+- **Saudi Arabia looks like England, not like Egypt** - same region and football culture as
+  Egypt, but with fans in their clubs' own stadiums: goals per match **2.90** (England 2.83,
+  Egypt 2.29), home wins **43.5%** (44.5%, 36.5%), draws **23.5%** (23.3%, 32.7%), 0-0 draws
+  **6.0%** (6.2%, 12.3%).
+- **The stands:** England averages ~40,000 per match; Saudi Arabia ~8,000 league-wide but
+  **22,461 for its big 4 popular clubs vs 4,325 for the rest** (2024-25). Egyptian clubs,
+  by contrast, played with no crowds at all for 6.5 years after 2012 and are still capped at
+  20,000 per match (regulatory caps from news reports, not dataset findings).
+- **A stadium of one's own:** 18 Saudi clubs play in 15 stadiums (only city-mates share) and
+  20 English clubs in 20 - while Egyptian clubs used 5.1 stadiums each. Champions in the
+  decade: **2 in Egypt, 4 in Saudi Arabia, 4 in England**.
+
 ## How to run
 
 ```bash
@@ -99,6 +116,21 @@ on Kaggle (license not stated on the dataset page; used here with attribution), 
 2015-16 to 2022-23 in `epl_goals_2015_2023.csv`. Cross-check: its 8,393 goals match the
 football-data results exactly for the same span.
 
+**Saudi league (match results + attendance):** results grids and league-published attendance
+tables from the 10 Wikipedia season pages (e.g.
+[2024-25 Saudi Pro League](https://en.wikipedia.org/wiki/2024%E2%80%9325_Saudi_Pro_League)),
+license **CC BY-SA 4.0**, parsed into `spl_results.csv` (2,358 matches) and
+`spl_attendance.csv`. Verification: match counts exact for all 10 seasons; 845 of 846 scores
+identical to ESPN's data for the 3 seasons ESPN covers (the one difference is an officially
+awarded match, kept as awarded); champions computed from the data match official history
+all 10 seasons.
+
+**Egypt crowd context (not data):** [BBC (2018)](https://www.bbc.com/sport/football/45185133),
+[The Guardian (2018)](https://www.theguardian.com/football/2018/sep/12/port-said-riot-egypt-football-fans-stadiums),
+[Ahram Online (2024)](https://english.ahram.org.eg/NewsContent/6/51/517938/Sports/Egyptian-Football/Egyptian-Premier-League-doubles-attendance-to-,.aspx).
+England/Saudi measured attendance from the Wikipedia season pages above plus the
+[Premier League season pages](https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League).
+
 ## Caveats (found during data cleaning)
 
 - Egyptian season 2024-25 is **partial**: 153 matches up to 5 March 2025 (the Kaggle page
@@ -116,15 +148,21 @@ football-data results exactly for the same span.
 - EPL goal-level data ends at 2022-23, so the penalty comparison uses 2015-2023 on both sides.
 - Kick-off time is missing for 455 Egyptian matches; not used in any analysis.
 - Team names are as written in the datasets: `Ahly SC` = Al Ahly, `El Masry` = Al Masry.
-- Attendance figures exist in neither dataset, so fan-restriction context is labeled as
-  history, not as something the data proves. What the data does prove is the COVID
-  empty-stadium collapse of home advantage in both leagues.
+- Attendance figures exist in neither the Egyptian nor the English match datasets, so
+  fan-restriction context is labeled as history, not as something the data proves. What the
+  data does prove is the COVID empty-stadium collapse of home advantage. Saudi and English
+  measured attendance come from league-published figures via Wikipedia (no 2020-21 figures,
+  COVID); Egypt publishes no attendance, only government crowd caps.
+- One Saudi match was decided off the pitch: Al-Orobah 0-3 Al-Nassr (28 Feb 2025) ended 0-0
+  and was awarded to Al-Nassr by the Saudi Sports Arbitration Centre (ineligible player);
+  the official awarded result is kept, matching Wikipedia.
+- The Saudi file has no goal scorers, so scorer/penalty analyses stay Egypt-vs-England.
 
 ## Project structure
 
 ```
 egyptian-league-analysis/
 ├── egyptian_premier_league_analysis.ipynb   # the full analysis, all charts included
-├── data/                                    # the 5 CSVs (3 Egyptian + 2 English)
+├── data/                                    # the 8 CSVs (3 Egyptian + 3 English + 2 Saudi)
 └── README.md
 ```
