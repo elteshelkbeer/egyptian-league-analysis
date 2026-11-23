@@ -72,8 +72,13 @@ junior data analyst.
 - Penalties: **15.3% of Egyptian goals vs 7.7% of English goals** (2015-2023, the span the
   EPL goal-level data covers).
 
-**The fan-power test: Saudi Arabia as the control group (2,358 matches):**
+**The fan-power test: the league is weak because too many clubs have no fans (2,358 Saudi matches as the control group):**
 
+- **The structural difference:** corporate/institutional clubs are **24 of 37 Egyptian clubs
+  (65%)** - about 54% of the league every season, and rising (44% in 2016-17 to 61%
+  recently). **80% of all matches** involve at least one fan-less club, and **27%** are
+  corporate-vs-corporate. Saudi Arabia has 0 of 18 such clubs; England has 0 of 20.
+  (This is a structural comparison, not a league ranking - the notebook says so explicitly.)
 - **Saudi Arabia looks like England, not like Egypt** - same region and football culture as
   Egypt, but with fans in their clubs' own stadiums: goals per match **2.90** (England 2.83,
   Egypt 2.29), home wins **43.5%** (44.5%, 36.5%), draws **23.5%** (23.3%, 32.7%), 0-0 draws
